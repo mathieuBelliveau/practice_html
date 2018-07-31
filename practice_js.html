@@ -2,21 +2,25 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/themes.js" type="text/javascript"></script>
-<!--
     <script>
-        $(document).ready(function(){
-            $("div").click(function(){
-                $(this).hide();
-            });
+        document.addEventListener("DOMContentLoaded", function() {
+          function createParagraph() {
+            var para = document.createElement('p');
+            para.textContent = 'You clicked the button!';
+            document.body.appendChild(para);
+          }
+
+          var buttons = document.querySelectorAll('button');
+
+          for(var i = 0; i < buttons.length ; i++) {
+            buttons[i].addEventListener('click', createParagraph);
+          }
         });
     </script>
--->
 </head>
 <body>
 
-<div>Hello you guys</div>
+<button>Hello you guys</button>
 
 </body>
 </html>
