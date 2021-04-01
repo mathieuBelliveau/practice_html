@@ -2,17 +2,32 @@
 <html lang="fr">
 <head>
 <style>
-div {border:2px solid tomato}
+div {border:2px solid tomato},
+
+a:hover { 
+	color:red; 
+	text-decoration: bold;
+}
+
+a:visited { color:yellow; }
+
+.button {
+	padding:25px 15px;
+	background-color:red;
+	margin: 15px;
+}
 </style>
 </head>
 <body>
 <!-- Did you know I've never web dev'ed before? Bet you can't tell-->
-<address>
+<address style="margin:30px">
 Mathieu Belliveau<br>
 5062306097<br>
 <a href="mailto:mathieu.belliveau6097@gmail.com">Email me</a><br>
 <a href="https://github.com/mathieuBelliveau/">My Github</a>
 </address>
+
+<a class="button" href="#blackest">Wanna see my secret?</a>
 
 <button onclick="document.location='https://res.cloudinary.com/teepublic/image/private/s--kdhjpj65--/c_crop,x_10,y_10/c_fit,h_830/c_crop,g_north_west,h_1038,w_1038,x_-354,y_-104/l_upload:v1565806151:production:blanks:vdbwo35fw6qtflw9kezw/fl_layer_apply,g_north_west,x_-465,y_-215/b_rgb:ffffff/c_limit,f_auto,h_313,q_90,w_313/v1585759174/production/designs/8805926_1'">Check out this BUTTon</button>
 <button onclick="document.location='https://www.w3schools.com/html/html_links_colors.asp'">Where you left off</button>
@@ -32,7 +47,7 @@ Mathieu Belliveau<br>
 <p>this is my hero<br>he taught me to <q>be happy, <br>despite your appearance</q></p>
 <h1 title="are you happy yet?" style="color:red;">BE HAPPY</h1>
 <input name="question" style="54px;">
-<h1 style="font-size:100px;color:black;">Check out my big, <b><div style="font-size:300%;font-family:verdana;padding:20px;">BLACK</div></b> header</h1>
+<h1 style="font-size:100px;color:black;">Check out my big, <b><div id="blackest" style="font-size:300%;font-family:verdana;padding:20px;">BLACK</div></b> header</h1>
 <pre>
 <div style="color:red">Roses are red</div>
 <div style="color:blue">Violets are blue</div>
